@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RUDRA | Streetwear</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090909;color:white;font-family:Arial}
+header{text-align:center;padding:22px;border-bottom:1px solid #b89550}
+.logo{font-size:40px;font-weight:900;letter-spacing:8px;color:#d4af62}
+nav{text-align:center;padding:18px}
+nav a{color:white;text-decoration:none;margin:10px}
+.hero{text-align:center;padding:85px 15px;background:#191510}
+.hero h1{font-size:42px;color:#d4af62}
+.hero p{letter-spacing:3px}
+.btn{background:#d4af62;color:black;padding:14px 25px;text-decoration:none;display:inline-block;margin-top:15px;font-weight:bold}
+h2{text-align:center;color:#d4af62;margin:40px 0}
+.products{display:grid;grid-template-columns:1fr 1fr;gap:12px;padding:12px}
+.product{background:#191919;text-align:center;padding:10px}
+.product img{width:100%;height:200px;object-fit:cover}
+.product h3{font-size:14px}
+.price{color:#d4af62;font-weight:bold}
+button{background:#d4af62;border:0;padding:12px;font-weight:bold}
+footer{text-align:center;padding:35px;color:#aaa}
+</style>
+</head>
+<body>
+<header>
+<div class="logo">RUDRA</div>
+<p>PREMIUM STREETWEAR</p>
+</header>
+<nav>
+<a href="#home">HOME</a>
+<a href="#shop">SHOP</a>
+<a href="#contact">CONTACT</a>
+</nav>
+<section class="hero" id="home">
+<p>NEW COLLECTION 2026</p>
+<h1>WEAR YOUR ATTITUDE.</h1>
+<p>BE BOLD. BE DIFFERENT.</p>
+<a class="btn" href="#shop">SHOP NOW</a>
+</section>
+<h2 id="shop">OUR COLLECTION</h2>
+<div class="products">
+<div class="product">
+<img src="https://placehold.co/400x500/171717/d4af62?text=RUDRA+TEE">
+<h3>RUDRA GRAPHIC TEE</h3>
+<p class="price">₹699</p>
+<button onclick="order('RUDRA GRAPHIC TEE')">ORDER NOW</button>
+</div>
+<div class="product">
+<img src="https://placehold.co/400x500/171717/d4af62?text=OVERSIZED+TEE">
+<h3>OVERSIZED TEE</h3>
+<p class="price">₹899</p>
+<button onclick="order('OVERSIZED TEE')">ORDER NOW</button>
+</div>
+</div>
+<footer id="contact">
+<h2>RUDRA</h2>
+<p>STYLE YOUR IDENTITY.</p>
+<p>© 2026 RUDRA</p>
+</footer>
+<script>
+function order(product){
+alert("Welcome to RUDRA! You selected "+product);
+}
+</script>
+</body>
+</html>
